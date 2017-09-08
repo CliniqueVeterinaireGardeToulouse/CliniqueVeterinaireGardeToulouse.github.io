@@ -1,0 +1,19 @@
+{
+  "name": "cliniqueveterinairegardetoulouse.github.io",
+  "version": "1.0.0",
+  "description": "Page d'accueil optimisée du site vet-urgentys.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliniqueVeterinaireGardeToulouse/CliniqueVeterinaireGardeToulouse.github.io.git"
+  },
+  "author": "François-Marie de Jouvencel <fm.de.jouvencel@gmail.com> (https://github.com/djfm)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliniqueVeterinaireGardeToulouse/CliniqueVeterinaireGardeToulouse.github.io/issues"
+  },
+  "homepage": "https://github.com/CliniqueVeterinaireGardeToulouse/CliniqueVeterinaireGardeToulouse.github.io#readme"
+}
