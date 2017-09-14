@@ -1,8 +1,12 @@
+const path = require('path');
+
+const distPath = path.resolve(__dirname, 'dist');
+
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: __dirname,
+    path: distPath,
   },
   module: {
     rules: [{
@@ -18,7 +22,7 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: __dirname,
+    contentBase: distPath,
     compress: true,
   },
 };
