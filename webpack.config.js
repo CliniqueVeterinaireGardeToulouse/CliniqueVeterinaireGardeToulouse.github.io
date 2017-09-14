@@ -8,14 +8,15 @@ module.exports = {
     rules: [{
       test: /\.scss$/,
       use: [{
-        loader: 'style-loader',
+        loader: 'style-loader?sourceMap',
       }, {
-        loader: 'css-loader',
+        loader: 'css-loader?sourceMap',
       }, {
-        loader: 'sass-loader',
+        loader: 'sass-loader?sourceMap',
       }],
     }],
   },
+  devtool: 'source-map',
   devServer: {
     contentBase: __dirname,
     compress: true,
