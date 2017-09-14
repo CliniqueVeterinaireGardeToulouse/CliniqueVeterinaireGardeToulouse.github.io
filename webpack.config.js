@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const distPath = path.resolve(__dirname, 'dist');
 
@@ -24,5 +25,10 @@ module.exports = {
   devServer: {
     contentBase: distPath,
     compress: true,
+    hot: true,
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+  ],
 };
