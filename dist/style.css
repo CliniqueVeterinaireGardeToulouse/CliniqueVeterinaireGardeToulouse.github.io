@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+p {
   line-height: 1.4rem; }
 
 body {
@@ -10,10 +12,20 @@ main {
   padding: 0.5rem; }
 
 header {
+  align-items: center;
   background-color: #2250a3;
-  height: 4rem; }
+  display: flex;
+  height: 4rem;
+  justify-content: space-around; }
+  header strong {
+    font-size: 2rem; }
+  header a {
+    color: #d62839; }
 
 img {
   max-height: 100%; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map*/
