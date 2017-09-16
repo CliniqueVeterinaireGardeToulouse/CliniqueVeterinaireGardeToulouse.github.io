@@ -1,2 +1,19 @@
-body{color:#2250a3}
+* {
+  box-sizing: border-box;
+  line-height: 1.4rem; }
+
+body {
+  color: #222;
+  margin: 0; }
+
+main {
+  padding: 0.5rem; }
+
+header {
+  background-color: #2250a3;
+  height: 4rem; }
+
+img {
+  max-height: 100%; }
+
 /*# sourceMappingURL=style.css.map*/
