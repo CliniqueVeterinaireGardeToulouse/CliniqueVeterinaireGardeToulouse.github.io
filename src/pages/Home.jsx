@@ -12,6 +12,9 @@ const Home = () => (
         <strong>urgences vétérinaires</strong>{' '}
         lorsque votre vétérinaire habituel n{'\''}est pas disponible.
       </p>
+      <p className="call-us">
+        <a href="tel:0561112131">Appelez vite !</a>
+      </p>
     </main>
   </div>
 );
