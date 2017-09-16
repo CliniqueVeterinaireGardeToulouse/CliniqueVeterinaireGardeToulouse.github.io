@@ -22522,7 +22522,16 @@ var Home = function Home() {
     _react2.default.createElement(
       "header",
       null,
-      _react2.default.createElement("img", { alt: "", src: "/logo.png" })
+      _react2.default.createElement("img", { alt: "", src: "/logo.png" }),
+      _react2.default.createElement(
+        "a",
+        { href: "tel:0561112131" },
+        _react2.default.createElement(
+          "strong",
+          null,
+          "05 61 11 21 31"
+        )
+      )
     ),
     _react2.default.createElement(
       "main",
@@ -22530,7 +22539,15 @@ var Home = function Home() {
       _react2.default.createElement(
         "p",
         null,
-        "Nous prenons en charge vos urgences v\xE9t\xE9rinaires lorsque votre v\xE9t\xE9rinaire habituel n",
+        "Nous prenons en charge vos",
+        ' ',
+        _react2.default.createElement(
+          "strong",
+          null,
+          "urgences v\xE9t\xE9rinaires"
+        ),
+        ' ',
+        "lorsque votre v\xE9t\xE9rinaire habituel n",
         '\'',
         "est pas disponible."
       )
