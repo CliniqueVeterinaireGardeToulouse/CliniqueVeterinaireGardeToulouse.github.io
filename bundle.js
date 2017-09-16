@@ -22550,6 +22550,15 @@ var Home = function Home() {
         "lorsque votre v\xE9t\xE9rinaire habituel n",
         '\'',
         "est pas disponible."
+      ),
+      _react2.default.createElement(
+        "p",
+        { className: "call-us" },
+        _react2.default.createElement(
+          "a",
+          { href: "tel:0561112131" },
+          "Appelez vite !"
+        )
       )
     )
   );
