@@ -1,0 +1,5 @@
+#!/bin/bash
+npm run build &&
+git add dist &&
+git ci -m"Déploiement du $(date)" &&
+git subtree push --prefix dist origin master
