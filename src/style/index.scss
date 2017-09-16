@@ -3,6 +3,9 @@
 
 * {
   box-sizing: border-box;
+}
+
+p {
   line-height: $font-size * 1.4;
 }
 
@@ -16,10 +19,25 @@ main {
 }
 
 header {
+  align-items: center;
   background-color: $brand-primary;
+  display: flex;
   height: $header-height;
+  justify-content: space-around;
+
+  strong {
+    font-size: 2 * $font-size;
+  }
+
+  a {
+    color: $red;
+  }
 }
 
 img {
   max-height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
