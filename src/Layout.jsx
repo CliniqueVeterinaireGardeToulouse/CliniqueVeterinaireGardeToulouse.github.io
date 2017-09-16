@@ -6,13 +6,13 @@ const Layout = ({ children }) => (
     <head>
       <title>Urgence Vétérinaire Toulouse</title>
       <link rel="stylesheet" href="/style.css" />
-      <script src="/bundle.js" async defer />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
       <div id="mount">
         {children}
       </div>
+      <script src="/bundle.js" />
     </body>
   </html>
 );

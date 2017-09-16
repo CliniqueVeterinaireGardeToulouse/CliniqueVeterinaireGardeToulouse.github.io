@@ -18,5 +18,5 @@ const whenDocumentIsReady = (fn) => {
 whenDocumentIsReady(render);
 
 if (module.hot) {
-  module.hot.accept('./App', render);
+  module.hot.accept('./App', () => render());
 }

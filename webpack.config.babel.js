@@ -55,11 +55,8 @@ export default {
   devtool: 'source-map',
   devServer: {
     contentBase: distPath,
-    compress: true,
-    hot: true,
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new StaticSiteGeneratorPlugin(),
     new ExtractTextPlugin('style.css'),

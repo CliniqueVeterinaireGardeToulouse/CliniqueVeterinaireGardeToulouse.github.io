@@ -1,5 +1,25 @@
 @import 'colors';
+@import 'sizes';
+
+* {
+  box-sizing: border-box;
+  line-height: $font-size * 1.4;
+}
 
 body {
-  color: $brand-primary;
+  color: $text-color;
+  margin: 0;
+}
+
+main {
+  padding: $spacer-x;
+}
+
+header {
+  background-color: $brand-primary;
+  height: $header-height;
+}
+
+img {
+  max-height: 100%;
 }
