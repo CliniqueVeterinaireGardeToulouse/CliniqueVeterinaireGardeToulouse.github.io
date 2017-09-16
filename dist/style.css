@@ -3,6 +3,16 @@
 
 p {
   line-height: 1.4rem; }
+  p.call-us {
+    margin-top: 2rem;
+    text-align: center; }
+    p.call-us a {
+      background-color: #e4fde1;
+      border: 1px solid #306b34;
+      color: #306b34;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.5rem 0.5rem; }
 
 body {
   color: #222;
@@ -26,6 +36,7 @@ img {
   max-height: 100%; }
 
 a {
+  color: #4ba3c3;
   text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map*/
