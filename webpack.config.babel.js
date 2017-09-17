@@ -36,6 +36,11 @@ const isProd = process.env.NODE_ENV === 'production';
 const stylesRule = isProd ? prodStylesRule : devStylesRule;
 
 const prodPlugins = isProd ? [
+  new webpack.DefinePlugin({
+    'process.env': {
+      NODE_ENV: JSON.stringify('production'),
+    },
+  }),
   new webpack.optimize.UglifyJsPlugin(),
   new StaticSiteGeneratorPlugin(),
   new ExtractTextPlugin('style.css'),
