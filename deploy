@@ -1,5 +1,5 @@
 #!/bin/bash
 npm run build &&
 git add dist &&
-git ci -m"Déploiement du $(date)" &&
+git ci -m"Déploiement du $(date)" --alllow-empty &&
 git subtree push --prefix dist origin master
