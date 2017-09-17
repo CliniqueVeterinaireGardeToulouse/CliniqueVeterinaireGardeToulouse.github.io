@@ -4,6 +4,8 @@ import propTypes from 'prop-types';
 const Layout = ({ children }) => (
   <html lang="fr">
     <head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106568648-1" />
+      <script src="/analytics.js" />
       <title>Urgence Vétérinaire Toulouse</title>
       <link rel="stylesheet" href="/style.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
