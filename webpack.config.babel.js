@@ -23,7 +23,11 @@ const prodStylesRule = {
   use: ExtractTextPlugin.extract({
     fallback: 'style-loader?sourceMap',
     // resolve-url-loader may be chained before sass-loader if necessary
-    use: ['css-loader?sourceMap', 'sass-loader?sourceMap'],
+    use: [
+      'css-loader?sourceMap',
+      'postcss-loader?sourceMap',
+      'sass-loader?sourceMap',
+    ],
   }),
 };
 
