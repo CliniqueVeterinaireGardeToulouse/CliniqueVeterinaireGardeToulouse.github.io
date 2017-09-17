@@ -35,16 +35,13 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const stylesRule = isProd ? prodStylesRule : devStylesRule;
 
-const prodPlugins = isProd ? [
-  new webpack.DefinePlugin({
-    'process.env': {
-      NODE_ENV: JSON.stringify('production'),
-    },
-  }),
-  new webpack.optimize.UglifyJsPlugin(),
+const plugins = isProd ? [
   new StaticSiteGeneratorPlugin(),
   new ExtractTextPlugin('style.css'),
-] : [];
+  new webpack.optimize.UglifyJsPlugin(),
+] : [
+  new webpack.NamedModulesPlugin(),
+];
 
 export default {
   context: __dirname,
@@ -78,8 +75,5 @@ export default {
     host: '0.0.0.0',
     disableHostCheck: true,
   },
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-    ...prodPlugins,
-  ],
+  plugins,
 };
