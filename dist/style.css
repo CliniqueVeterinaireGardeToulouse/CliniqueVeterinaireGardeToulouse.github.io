@@ -22,11 +22,16 @@ main {
   padding: 0.5rem; }
 
 header {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #2250a3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 4rem;
-  justify-content: space-around; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   header strong {
     font-size: 2rem; }
   header a {
