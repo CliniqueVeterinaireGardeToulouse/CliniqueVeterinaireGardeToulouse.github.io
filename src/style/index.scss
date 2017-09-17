@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'sizes';
+@import 'fonts';
 
 * {
   box-sizing: border-box;
@@ -7,20 +8,6 @@
 
 p {
   line-height: $font-size * 1.4;
-
-  &.call-us {
-    margin-top: $spacer-y * 4;
-    text-align: center;
-
-    a {
-      background-color: $white-ish;
-      border: 1px solid $green;
-      color: $green;
-      display: inline-block;
-      font-weight: bold;
-      padding: $spacer-y $spacer-x;
-    }
-  }
 }
 
 body {
@@ -55,4 +42,17 @@ img {
 a {
   color: $blue;
   text-decoration: none;
+}
+
+.call-us {
+  margin-top: $spacer-y * 4;
+  text-align: center;
+
+  a {
+    background-color: $green;
+    border-radius: 100%;
+    color: $white;
+    display: inline-block;
+    font-weight: bold;
+  }
 }

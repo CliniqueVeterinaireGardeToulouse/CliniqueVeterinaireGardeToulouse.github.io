@@ -1,0 +1,53 @@
+// sass-lint:disable no-duplicate-properties, no-vendor-prefixes
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~material-design-icons/iconfont/MaterialIcons-Regular.eot'); // For IE6-8
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url('~material-design-icons/iconfont/MaterialIcons-Regular.woff2') format('woff2'),
+  url('~material-design-icons/iconfont/MaterialIcons-Regular.woff') format('woff'),
+  url('~material-design-icons/iconfont/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+$md-light: rgba(255, 255, 255, 1);
+$md-light-inactive: rgba(255, 255, 255, .3);
+$md-dark: rgba(0, 0, 0, .54);
+$md-dark-inactive: rgba(0, 0, 0, .26);
+
+.material-icons {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-feature-settings: 'liga';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+
+  &.md-18 { font-size: 18px; }
+  &.md-24 { font-size: 24px; }
+  &.md-36 { font-size: 36px; }
+  &.md-48 { font-size: 48px; }
+
+  &.md-dark {
+    color: $md-dark;
+
+    &.md-inactive { color: $md-dark-inactive; }
+  }
+
+  &.md-light {
+    color: $md-light;
+
+    &.md-inactive { color: $md-light-inactive; }
+  }
+}

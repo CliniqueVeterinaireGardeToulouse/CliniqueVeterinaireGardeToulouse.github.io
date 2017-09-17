@@ -13,7 +13,9 @@ const Home = () => (
         lorsque votre vétérinaire habituel n{'\''}est pas disponible.
       </p>
       <p className="call-us">
-        <a href="tel:0561112131">Appelez vite !</a>
+        <a href="tel:0561112131">
+          <i className="material-icons">&#xE0B0;</i>
+        </a>
       </p>
     </main>
   </div>

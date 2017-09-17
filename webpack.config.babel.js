@@ -57,7 +57,12 @@ export default {
         use: {
           loader: 'babel-loader',
         },
-      }],
+      },
+      {
+        test: /\.(eot|woff2?|ttf)/,
+        use: 'file-loader',
+      },
+    ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
