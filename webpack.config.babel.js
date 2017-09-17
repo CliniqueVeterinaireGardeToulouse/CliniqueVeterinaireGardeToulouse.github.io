@@ -35,6 +35,10 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const stylesRule = isProd ? prodStylesRule : devStylesRule;
 
+const prodPlugins = isProd ? [
+  new webpack.optimize.UglifyJsPlugin(),
+] : [];
+
 export default {
   context: __dirname,
   entry: './src/index.jsx',
@@ -64,5 +68,6 @@ export default {
     new webpack.NamedModulesPlugin(),
     new StaticSiteGeneratorPlugin(),
     new ExtractTextPlugin('style.css'),
+    ...prodPlugins,
   ],
 };
