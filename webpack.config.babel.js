@@ -63,6 +63,8 @@ export default {
   devtool: 'source-map',
   devServer: {
     contentBase: distPath,
+    host: '0.0.0.0',
+    disableHostCheck: true,
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
