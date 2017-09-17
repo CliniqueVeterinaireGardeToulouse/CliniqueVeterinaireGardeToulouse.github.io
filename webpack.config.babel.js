@@ -37,6 +37,8 @@ const stylesRule = isProd ? prodStylesRule : devStylesRule;
 
 const prodPlugins = isProd ? [
   new webpack.optimize.UglifyJsPlugin(),
+  new StaticSiteGeneratorPlugin(),
+  new ExtractTextPlugin('style.css'),
 ] : [];
 
 export default {
@@ -68,8 +70,6 @@ export default {
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
-    new StaticSiteGeneratorPlugin(),
-    new ExtractTextPlugin('style.css'),
     ...prodPlugins,
   ],
 };
