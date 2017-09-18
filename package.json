@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline",
+    "prod-start": "NODE_ENV=production npm run build && NODE_ENV=production webpack-dev-server"
   },
   "repository": {
     "type": "git",
